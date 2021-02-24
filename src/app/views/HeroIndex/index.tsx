@@ -49,13 +49,7 @@ const HeroCardContainer = styled.div`
   }
 `;
 
-interface Props {
-  size: number;
-}
-
-const Grid = styled.div``;
-
-const Row = styled.div`
+const Box = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,11 +88,11 @@ export const HeroIndex: React.FC<IHeroIndexProps> = () => {
 
       {/** Improve this section. Data provided is defined on top in GraphQL query. You can decide what you use and what you dont't.*/}
       <HeroCardContainer>
-        <Row>
+        <Box>
           {data.heroes.map((hero) => (
             <HeroCard key={hero.name} {...hero} />
           ))}
-        </Row>
+        </Box>
       </HeroCardContainer>
 
       <Footer />
