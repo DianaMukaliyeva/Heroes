@@ -39,6 +39,10 @@ const StyledCard = styled.div`
   max-width: 300px;
   margin: 10px;
   background: linear-gradient(180deg, #3c1053, #ad5389);
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+  }
 `;
 
 const StyledName = styled.h2`
